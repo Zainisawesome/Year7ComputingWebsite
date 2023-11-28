@@ -1,38 +1,8 @@
-
-<!DOCTYPE html>
-<html lang="en">
-<!-- divinectorweb.com -->
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eyes Follow Mouse Cursor in JavaScript</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-    <div class="wrapper">
-        <div class="balls"></div>
-        <div class="balls"></div> 
-    </div>
-
-    <script>
-        document.querySelector("body").addEventListener("mousemove", animate);
-
-        function animate() {
-        let wrapper = document.querySelectorAll(".balls");
-        wrapper.forEach((balls) => {
-            let x = balls.getBoundingClientRect().left + balls.clientWidth / 2;
-            let y = balls.getBoundingClientRect().top + balls.clientHeight / 2;
-
-            let radian = Math.atan2(event.pageX - x, event.pageY - y);
-            let rotate = radian * (180 / Math.PI) * -1 + 270;
-            balls.style.transform = `rotate(${rotate}deg)`;
-        });
-        }
-    </script>  
+ <style>
 </body>
-</html>
+
 
 h1 {
             
