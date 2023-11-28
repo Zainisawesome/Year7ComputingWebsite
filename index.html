@@ -1,8 +1,33 @@
-<html>
+<html lang="en" dir="ltr">
 <head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="style.css">
+ 
  <style>
-</body>
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+  body{
+   height: 100vh;
+   background: #000115;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  }
 
+  .cursor{
+   z-index: 999;
+   background: #2696E8;
+   width: 20px;
+   height: 20px;
+   border-radius: 50%;
+   pointer-events: none;
+   box-shadow: 0 0 20px #2696E8,
+               0 0 60px #2696E8,
+               0 0 100px #2696E8;
+  
 
 h1 {
             
@@ -45,7 +70,7 @@ text: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(45,56,253,1) 100%);
   
 </head>
 <body>
-
+<div class="cursor"></div>
 <h1>The amazing world </h1>
 <h2>Zain Khowaja-7B </h2>
 
