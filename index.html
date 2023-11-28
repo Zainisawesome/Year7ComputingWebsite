@@ -1,36 +1,7 @@
 <html>
 <head>
  
- <style type="text/css">
-		*{
-			text-decoration: none;
-		}
-		.navbar{
-			background: crimson; font-family: calibri; padding-right: 15px;padding-left: 15px;
-		}
-		.navdiv{
-			display: flex; align-items: center; justify-content: space-between;
-		}
-		.logo a{
-			font-size: 35px; font-weight: 600; color: white;
-		}
-		li{
-			list-style: none; display: inline-block;
-		}
-		li a{
-			color: white; font-size: 18px; font-weight: bold; margin-right: 25px;
-		}
-		button{
-			background-color: black; margin-left: 10px; border-radius: 10px; padding: 10px; width: 90px;
-		}
-		button a{
-			color: white; font-weight: bold; font-size: 15px;
-		}
-	 .parentDiv {  
-display: flex; 
-justify-content: center; 
-align-items: center;} 
-
+ <style>
 h1 {
             
         
@@ -79,16 +50,97 @@ h3{
   
 </head>
 <body>
- <nav class="navbar">
-		<div class="navdiv">
-			<div class="logo"><a href="#">Zain Khowaja 7B</a> </div>
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">What makes the world so important?</a></li>
-				<li><a href="#"></a></li>
-			</ul>
-		</div>
-	</nav>
+ <div class ="main">
+        <div class="navbar ">
+        
+          <div class="container flex lead ">
+            <nav>
+                <ul>
+                    <li><a href="#">Acasa</a></li>
+                    <li><a href="features.html">Proiecte</a></li>
+                    <li><a href="docs.html">Recenzii</a></li>
+                </ul>
+            </nav>
+            <div>
+                <h1>CarolHousing</h1>
+                  
+            </div>
+            <div class="social sm">
+                <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Showcase -->
+    <section class="showcase">
+        <div class="container grid">
+            <div class="showcase-text">
+                <h1>Easier Deployment</h1>
+                <p>Deploy web apps of all kinds, from large scale enterprise APIs to static websites for individuals. Fill out the form to try a demo of our platform</p>
+                <a href="features.html" class="btn btn-outline">Read More</a>
+            </div>
+
+            <div class="showcase-form card">
+                <h2>Request a Demo</h2>
+                 
+                 <form>
+                    <div class="form-control">
+                        <input type="text" name="name" placeholder="Name" required>
+                    </div>
+                    <div class="form-control">
+                        <input type="text" name="company" placeholder="Company Name" required>
+                    </div>
+                    <div class="form-control">
+                        <input type="email" name="email" placeholder="Email" required>
+                    </div>
+                    <input type="submit" value="Send" class="btn btn-primary">
+                </form>
+            </div>
+        </div>
+    </section>
+
+  
+    <!-- Cli -->
+    <section class="cli">
+        <div class="container grid">
+            <img src="images/cli.png" alt="">
+            <div class="card">
+                <h3>Easy to use, cross platform CLI</h3>
+            </div>
+            <div class="card">
+                <h3>Deploy in seconds</h3>
+            </div>
+        </div>
+    </section>
+
+    
+
+    
+
+    <!-- Footer -->
+    <footer class="footer bg-dark py-5">
+        <div class="container grid grid-3">
+            <div>
+                <h1>Loruki
+                </h1>
+                <p>Copyright &copy; 2020</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="docs.html">Docs</a></li>
+                </ul>
+            </nav>
+            <div class="social">
+                <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+            </div>
+        </div>
+    </footer>
 <h1>The amazing world </h1>
 
 
