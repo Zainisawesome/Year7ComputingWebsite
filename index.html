@@ -1,12 +1,39 @@
 <html>
 <head>
- 
+ <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
  <style type="text/css">
-  {
-  position: fixed;
-  top: 0;
-  width: 100%;
+
+ html {
+	scroll-behavior: smooth;
 }
+
+.back-to-top {
+	position: fixed;
+	bottom: 2rem;
+	right: 2rem;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #dc143c;
+	border-radius: 0.5rem;
+	padding: 0.5rem;
+	text-decoration: none;
+	transition: 0.2s ease-out;
+}
+
+.back-to-top span {
+	color: #fff;
+	font-size: 3rem;
+	transition: 0.2s ease-out;
+}
+
+.back-to-top:hover {
+	background-color: #be1a3b;
+}
+.back-to-top:hover span {
+	transform: translateY(-4px);
+}
+
  .navbar {
   position: fixed;
   top: 0;
@@ -97,61 +124,7 @@ h3{
         
   text: rgb(252, 252, 252);
   }
-.button {
-  text-align:center;
-  margin: auto;
-  max-width: 500px;
-  padding: 10px;
-}
 
-
-
-
-.button {
-  display: inline-block;
-  border-radius: 4px;
-  background-color: #7FFF00;
-  border: none;
-  color: #FFFFFFF;
-  text-align: center;
-  font-size: 28px;
-  padding: 20px;
-  width: 250px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;
-}
-
-.button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-.button span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
-.button:hover span {
-  padding-right: 25px;
-}
-
-.button:hover span:after {
-  opacity: 1;
-  right: 0;
-}
-.button{
-
-}
-button{
-  margin:auto;
-}
      
 </style>
 
@@ -162,9 +135,13 @@ button{
 </head>
 <body>
 <button type="button">Click Me!</button>
-<div class="center">
-<button class="button" style="vertical-align:middle"><span>To The Top </span></button>
-</div>
+<a href="#" class="back-to-top">
+		<span class="material-symbols-outlined">
+arrow_upward
+</span>
+	</a>
+
+
 <nav class="navbar">
 		<div class="navdiv">
 			<div class="logo"><a href="#">Zain Khowaja 7B</a> </div>
@@ -189,7 +166,7 @@ As it has the right combination of atmosphere, seasons, temperature and water to
 
 
 <div class="parentDiv"> 
-  <iframe src="https://giphy.com/embed/VI2UC13hwWin1MIfmi" width="480" height="320" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/VI2UC13hwWin1MIfmi">via GIPHY</a></p>
+  <iframe src="https://giphy.com/embed/VI2UC13hwWin1MIfmi" width="480" height="320" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
 </div>
 
  
